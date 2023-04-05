@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 .App {
+  overflow-x: hidden;
   text-align: center;
+  background-size: 100% 100%;
+  background-image: url("../public/night-sky.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -34,5 +44,460 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+h1 {
+  font-size: 2.9rem;
+  font-weight: bold;
+}
+
+.Header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  background-color: #6d28d9;
+  color: white;
+}
+
+.Header > nav {
+  display: flex;
+  gap: 2.5rem;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Header > nav > a {
+  border: 0.2rem solid #6d28d9;
+  padding-bottom: 0.1rem;
+}
+
+.Header > nav > a:hover {
+  cursor: pointer;
+  color: #ef4444;
+  border-bottom: 0.15rem solid #ef4444;
+  border-radius: 2px;
+}
+
+.Home {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  padding: 0 4rem;
+}
+
+.Home > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Home > div > h1 {
+  text-align: start;
+  font-size: 3.4rem;
+}
+
+.Home > div > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5rem;
+  background-color: #6d28d9;
+  color: white;
+}
+
+.Home > div > button > p {
+  margin: 0;
+}
+
+.Home > div > button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #6d28d9;
+}
+
+.Home > .img-placeholder {
+  display: flex;
+  max-width: 50rem;
+}
+
+.Home > .img-placeholder > img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  scroll-margin-top: 4rem;
+}
+
+.About > div {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.About > div > p {
+  padding-left: 4%;
+  text-align: start;
+  font-size: 1.5rem;
+  padding-left: 4rem;
+  align-self: flex-start;
+  margin-top: 8.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills-grid > .column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skills-grid > .column > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.skills-grid > .column > div > h2 {
+  font-size: 1.2rem;
+}
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 4rem;
+}
+
+.Projects > h1 {
+  color: white;
+}
+
+.Projects > .projects-grid {
+  flex: 1;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  padding: 2rem 7rem;
+}
+
+.project {
+  display: grid;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: white;
+}
+
+.project > img {
+  flex: 1;
+  max-width: 100%;
+}
+
+.project > .details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+  gap: 1.5rem;
+  border-top: 0.1rem solid black;
+}
+
+.project > .details > .top {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project > .details > .top > p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.project > .details > .top > div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project > .details > .top > div > a {
+  width: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.project > .details > .top > div > a:hover {
+  filter: invert(31%) sepia(41%) saturate(11%) hue-rotate(7deg) brightness(92%)
+    contrast(76%);
+}
+
+.project > .details > .bottom {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.project > .details > .bottom > p {
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: start;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Contact > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.Contact > * .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 50%;
+}
+
+.Contact > h1 {
+  flex: 1;
+  margin: 0;
+}
+
+.Contact > * .details > h2 {
+  font-size: 1.3rem;
+  align-items: center;
+  text-align: start;
+  margin: 0;
+}
+
+.Contact > * .details > .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+
+.Contact > * .details > .links > a {
+  text-decoration: none;
+}
+
+.Contact > * .details > .links > .email {
+  display: flex;
+  align-content: center;
+  font-size: 1.3rem;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.Contact > * .details > .links > .email:hover {
+  cursor: pointer;
+}
+
+.Contact > * .details > * .email-icon {
+  width: 2.5rem;
+  filter: invert(100%) sepia(0%) saturate(7399%) hue-rotate(160deg)
+    brightness(116%) contrast(96%);
+}
+
+.Contact > * .details > .links > a {
+  font-size: 2.5rem;
+  display: flex;
+  color: white;
+}
+
+.Contact > .img-placeholder {
+  flex: 1;
+  max-width: 20rem;
+}
+.Contact > .img-placeholder > img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .Header {
+    justify-content: center !important;
+  }
+
+  .Header > nav {
+    justify-content: space-around;
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .Home {
+    margin-top: 4rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 8rem;
+  }
+  .About {
+    height: fit-content;
+    margin-bottom: 4rem;
+  }
+  .About > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .About > div > p {
+    padding: 0;
+    margin-top: 2rem;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .Projects {
+    margin-bottom: 3rem;
+  }
+
+  .Projects > .projects-grid {
+    padding: 0 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)) !important;
+  }
+
+  .project > .details {
+    gap: 0.5rem;
+  }
+
+  .project > .details > .bottom > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Header {
+    height: 3rem;
+  }
+
+  .Header > nav {
+    font-size: 1.3rem;
+    gap: 0;
+    padding: 0;
+  }
+
+  .Home {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .Home > div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Home > div > h1 {
+    font-size: 1.5rem;
+  }
+
+  .Home > div > button {
+    font-size: 1.1rem;
+    width: 8rem;
+  }
+
+  .About > div > p {
+    font-size: 1.3rem;
+  }
+
+  .Projects {
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 2rem !important;
+  }
+
+  .project {
+    max-width: 100%;
+  }
+
+  .Contact > h1 {
+    font-size: 1.8rem;
+  }
+
+  .Contact > * .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  .Contact > * .details > h2 {
+    font-size: 1rem;
+  }
+
+  .Contact > * .details > .links {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .Contact > * .details > * .email-icon {
+    width: 1.7rem;
+  }
+
+  .Contact > * .details > .links > .email {
+    font-size: 0.9rem;
+  }
+
+  .Contact > * .details > .links > a {
+    font-size: 1.7rem;
   }
 }
