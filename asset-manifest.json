@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portofolio/static/css/main.b9a3935a.css",
+    "main.js": "/portofolio/static/js/main.da0398e9.js",
+    "static/media/night-sky.jpg": "/portofolio/static/media/night-sky.f351a7104ecf515894da.jpg",
+    "index.html": "/portofolio/index.html",
+    "main.b9a3935a.css.map": "/portofolio/static/css/main.b9a3935a.css.map",
+    "main.da0398e9.js.map": "/portofolio/static/js/main.da0398e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9a3935a.css",
+    "static/js/main.da0398e9.js"
+  ]
+}
